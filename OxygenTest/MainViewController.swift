@@ -20,7 +20,6 @@ class MainViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.view.backgroundColor = .white
         self.setupDataFetching()
         self.setupUI()
     }
@@ -73,6 +72,7 @@ class MainViewController: UIViewController {
     }
 
     private func setupUI() {
+        self.view.backgroundColor = UIColor.systemBackground
         self.view.addSubview(self.buttonBackground)
         self.buttonBackground.addSubview(self.fetchButton)
         self.view.addSubview(self.modelLabel)
@@ -100,5 +100,4 @@ class MainViewController: UIViewController {
         ])
     }
 
-    
 }
